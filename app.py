@@ -6,21 +6,6 @@ st.set_page_config(page_title="Heart disease prediction",page_icon="🫀")
 
 st.title("Heart disease predictor🫀")
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url("https://img.freepik.com/free-vector/technology-face-circuit-diagram-background_1017-18300.jpg?semt=ais_user_personalization&w=740&q=80");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 with st.expander("About this app"):
     st.markdown("**What can this app do?**")
     st.info("This app use a deep learning model.Using this model and based on some data it will predict that have you heart disease or not.")
