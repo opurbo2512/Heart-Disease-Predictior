@@ -70,7 +70,7 @@ with st.container():
 
 
     model = Model()
-    model.load_state_dict(torch.load("model.pth"))
+    model.load_state_dict(torch.load("model/model.pth"))
 
     model.eval()
     with torch.inference_mode():
