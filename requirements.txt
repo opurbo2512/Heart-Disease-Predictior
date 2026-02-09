@@ -4,3 +4,4 @@ numpy
 pandas
 streamlit
 jupyter
+altair>=4.2.0
