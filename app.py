@@ -13,7 +13,7 @@ with st.expander("About this app"):
 with st.container():
     c1,c2,c3 = st.columns([1,2,1])
     with c2:
-        st.subheader("Input requeirment for prediction")
+        st.subheader("Input requirement for prediction")
 
 with st.container():
     c4,c5 = st.columns(2)
@@ -23,7 +23,7 @@ with st.container():
             age = st.number_input("Enter your age:",0,120)
             sex = st.radio("Sex",["Male","Female"])
             cpain = st.slider("Chest pain type",1,4)
-            resting_bp = st.number_input("Resting Bloos Pressure:",0,200)
+            resting_bp = st.number_input("Resting Blood Pressure:",0,200)
             chol = st.slider("cholesterol",0,1000)
             f_sugar = st.radio("fasting blood sugar?",["Yes","No"])
 
@@ -70,7 +70,7 @@ with st.container():
 
 
     model = Model()
-    model.load_state_dict(torch.load("model/model.pth"))
+    model.load_state_dict(torch.load("model.pth"))
 
     model.eval()
     with torch.inference_mode():
@@ -82,7 +82,7 @@ with st.container():
         if pred == 0:
             st.success("You have not any heart disease.")
         else:
-            st.warning("Ohhhh hohhh, you have heart desease.")
+            st.warning("Ohhhh hohhh, you have heart disease.")
 
 
         
